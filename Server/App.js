@@ -24,7 +24,7 @@ const middleware = (req, res, next) => {
 // app.get('/', (req, res) => {
 //     res.send(`Hello world from the server app.js`);
 // });
-const Port = 3000;
+// const Port = 3000;
 
 app.get("/about", middleware, (req, res) => {
   console.log(`Hello my About`);
@@ -43,6 +43,6 @@ app.get("/signup", (req, res) => {
   res.send(`Hello Registration world from the server`);
 });
 
-app.listen(Port, () => {
+app.listen(PORT, () => {
   console.log(`server is runnig at port no ${PORT}`);
 });
